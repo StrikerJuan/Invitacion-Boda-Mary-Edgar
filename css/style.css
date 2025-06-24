@@ -74,13 +74,8 @@ section {
     background-color: rgba(2, 1, 1, 0.5);
 }
 
-#detalles {
-    background-color: #b1b2e2;
-}
 
-#itinerario {
-    background-color: #dcddfc;
-}
+
 
 #regalos {
     background-color: #684d91;
@@ -442,303 +437,10 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     font-size: 25px;
 }
 
-/* Detalles de la fiesta */
-.detalles-header,
-.regalos-header {
-    height: 15%;
-    justify-content: center;
-}
-
-.detalles-header,
-.detalles-detalles,
-.regalos-regalos,
-.regalos-header {
-    display: flex;
-    align-items: center;
-
-}
-
-.detalles-header p,
-.regalos-header p {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-size: 50px;
-    font-style: italic;
-    color: #684d91;
-    text-align: center;
-}
-
-.detalles-detalles {
-    height: 100%;
-    flex-direction: column;
-}
-
-.detalles-iconos,
-.regalos-iconos {
-    display: flex;
-    flex-direction: row;
-    height: 280px;
-}
-
-.detalles-icono-1,
-.detalles-icono-2,
-.detalles-icono-3,
-.regalos-icono {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 500px;
-    height: 200px;
-}
-
-.detalles-icono-1 img,
-.detalles-icono-2 img,
-.detalles-icono-3 img {
-    width: 100px;
-}
-
-.detalles-title {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-size: 35px;
-    font-style: italic;
-    color: #622cb4
-}
-
-.detalles-title,
-.detalles-body {
-    height: 25%;
-    padding-top: 20px;
-}
-
-.detalles-body {
-    font-family: "Lora", serif;
-    width: 100%;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    color: #684d91;
-}
-
-.detalles-img img {
-    max-width: 300px;
-}
-
-.detalles-button {
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.detalles-button div {
-    padding: 5px;
-    width: 150px;
-    background-color: rgb(169, 44, 201);
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease;
-    /* Agrega una transición suave */
-}
-
-.detalles-button div p {
-    margin: 0;
-}
-
-.detalles-button div:hover {
-    cursor: pointer;
-    background-color: rgb(139, 16, 161);
-    /* Cambia el color de fondo */
-    color: white;
-    /* Cambia el color del texto */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    /* Agrega una sombra */
-    font-size: 16px;
-    /* Cambia el tamaño del texto */
-    transform: scale(1.1);
-    /* Escala el botón al 110% */
-}
-
-.detalles-button a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Linea de tiempo */
-.itinerario-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.timeline {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90%;
-    width: 90%;
-}
-
-.timeline:before {
-    content: '';
-    position: absolute;
-    /* left: 50%; */
-    width: 2px;
-    height: 100%;
-    background: #6658ea
-}
-
-.content {
-    border: #6658ea 1px solid;
-    padding: 15px;
-    border-radius: 20px;
-    color: #4a1cc9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.timeline ul {
-    margin: 0;
-    padding: 0;
-    width: 450px
-}
-
-.timeline ul li {
-    list-style: none;
-    position: relative;
-    width: 50%;
-    padding: 0 40px;
-    box-sizing: border-box;
-}
-
-.timeline ul li:nth-child(odd) {
-    float: left;
-    text-align: right;
-    clear: both;
-}
-
-.timeline ul li:nth-child(odd)::before {
-    content: '';
-    position: absolute;
-    top: 40px;
-    right: -5%;
-    width: 20px;
-    height: 20px;
-    background: white;
-    border: 2px solid #6658ea;
-    border-radius: 50%
-}
-
-.timeline ul li:nth-child(odd)::after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    width: 0;
-    height: 0;
-    top: 44px;
-    right: 25px;
-    border-width: 10px 0 10px 15px;
-    border-color: transparent transparent transparent #6658ea;
-}
-
-.timeline ul li:nth-child(even) {
-    float: right;
-    text-align: left;
-    clear: both;
-}
 
 
-.timeline ul li:nth-child(even)::before {
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: -5%;
-    width: 20px;
-    height: 20px;
-    background: white;
-    border: 2px solid #6658ea;
-    border-radius: 50%
-}
 
-.timeline ul li:nth-child(even)::after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    width: 0;
-    height: 0;
-    top: 44px;
-    left: 25px;
-    border-width: 10px 15px 10px 0px;
-    border-color: transparent #6658ea transparent transparent;
-}
 
-.timeline li {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    transform: translateY(50px);
-    /* Inicia cada elemento ligeramente desplazado hacia abajo */
-}
-
-.timeline li.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.itinerario-header {
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.itinerario-header p {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-size: 50px;
-    font-style: italic;
-    color: #4a1cc9;
-    text-align: center;
-}
-
-.content i {
-    font-size: 40px;
-}
-
-#itinerario {
-    max-height: 120%;
-    height: 120%;
-}
-
-.content h2 {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-size: 20px;
-    font-style: italic;
-}
-
-.content p {
-    font-family: "Lora", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-}
 
 /* MESA DE REGALOS */
 .regalos-regalos {
@@ -1308,6 +1010,371 @@ form label {
     color: #4b4b4b;
 }
 
+/*--------------------------------------------------Pantalla 4-----------*/
+#detalles {
+    min-height: 100vh;
+    padding: 80px 40px;
+    background-image: url('/img/fondo4.jpg'); /* opcional si quieres fondo decorativo */
+    background-color: rgb(255, 255, 255); /* Color negro semitransparente */
+    background-blend-mode: multiply;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), #fff 30%), url('/img/fondo4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Detalles de la fiesta */
+.detalles-header,
+.regalos-header {
+    height: 15%;
+    justify-content: center;
+}
+
+.detalles-header,
+.detalles-detalles,
+.regalos-regalos,
+.regalos-header {
+    display: flex;
+    align-items: center;
+
+}
+
+.detalles-header p,
+.regalos-header p {
+    font-family: "Philosopher", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 50px;
+    color: #546304;
+    text-align: center;
+}
+
+.detalles-detalles {
+    height: 100%;
+    flex-direction: column;
+}
+
+.detalles-iconos,
+.regalos-iconos {
+    display: flex;
+    flex-direction: row;
+    height: 280px;
+}
+
+.detalles-icono-1,
+.detalles-icono-2,
+.detalles-icono-3,
+.regalos-icono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+}
+
+.detalles-icono-1 img,
+.detalles-icono-2 img,
+.detalles-icono-3 img {
+    width: 100px;
+}
+
+.detalles-title {
+    font-family: "Hello-Paris", regular;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 35px;
+    color: #546304;
+}
+
+.detalles-title,
+.detalles-body {
+    height: 25%;
+    padding-top: 20px;
+}
+
+.detalles-body {
+    font-family: "Philosopher", cursive;
+    width: 100%;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #546304;
+}
+
+.detalles-img img {
+    max-width: 300px;
+}
+
+.detalles-button {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detalles-button div {
+    padding: 5px;
+    width: 150px;
+    background-color: #546304;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    /* Agrega una transición suave */
+}
+
+.detalles-button div p {
+    margin: 0;
+}
+
+.detalles-button div:hover {
+    cursor: pointer;
+    background-color: #3f4d02;
+    /* Cambia el color de fondo */
+    color: white;
+    /* Cambia el color del texto */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    /* Agrega una sombra */
+    font-size: 16px;
+    /* Cambia el tamaño del texto */
+    transform: scale(1.1);
+    /* Escala el botón al 110% */
+}
+
+.detalles-button a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*--------------------------------------------------Pantalla 5-----------*/
+#itinerario {
+    min-height: 100vh;
+    padding: 80px 40px;
+    background-image: url('/img/fondo5.jpg'); /* opcional si quieres fondo decorativo */
+    background-color: rgb(255, 255, 255); /* Color negro semitransparente */
+    background-blend-mode: multiply;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), #fff 30%), url('/img/fondo5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itinerario-header {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itinerario-header p {
+    font-family: "Philosopher", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 50px;
+    color: #546304;
+    text-align: center;
+}
+
+/* Linea de tiempo */
+.itinerario-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#itinerario {
+    max-height: 120%;
+    height: 120%;
+}
+
+.timeline {
+    width: 85%;
+    /* comentatio de actualizacion */
+}
+
+/* .timeline:before{
+    left: 0%;
+} */
+.timeline ul li {
+    width: 50%;
+}
+
+.timeline ul li:nth-child(odd) {
+    float: left;
+}
+
+.timeline ul li:nth-child(odd)::before {
+    right: -6%;
+}
+
+.timeline ul li:nth-child(even)::before {
+    left: -6%;
+}
+
+.timeline ul li:nth-child(odd)::after {
+    border-width: 10px 15px 10px 0px;
+    border-color: transparent #546304 transparent transparent;
+    rotate: 180deg;
+}
+
+.timeline ul li:nth-child(even) {
+    float: right;
+}
+
+.timeline {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 90%;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    /* left: 50%; */
+    width: 2px;
+    height: 100%;
+    background: #546304
+}
+
+.content {
+    border: #546304 1px solid;
+    padding: 15px;
+    border-radius: 20px;
+    color: #669e3a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline ul {
+    margin: 0;
+    padding: 0;
+    width: 450px
+}
+
+.timeline ul li {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.timeline ul li:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: -5%;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid #546304;
+    border-radius: 50%
+}
+
+.timeline ul li:nth-child(odd)::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 44px;
+    right: 25px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #546304;
+}
+
+.timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+
+.timeline ul li:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: -5%;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid #546304;
+    border-radius: 50%
+}
+
+.timeline ul li:nth-child(even)::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 44px;
+    left: 25px;
+    border-width: 10px 15px 10px 0px;
+    border-color: transparent #546304 transparent transparent;
+}
+
+.timeline li {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    transform: translateY(50px);
+    /* Inicia cada elemento ligeramente desplazado hacia abajo */
+}
+
+.timeline li.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.content i {
+    font-size: 40px;
+}
+
+
+
+.content h2 {
+    font-family: "Philosopher", regular;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.content p {
+    font-family: "Philosopher", regular;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
 
 @media screen and (max-width: 991px) {
     .carrusel {
@@ -1400,39 +1467,7 @@ form label {
         padding-top: 0;
     }
 
-    .timeline {
-        width: 85%;
-        /* comentatio de actualizacion */
-    }
-
-    /* .timeline:before{
-        left: 0%;
-    } */
-    .timeline ul li {
-        width: 50%;
-    }
-
-    .timeline ul li:nth-child(odd) {
-        float: left;
-    }
-
-    .timeline ul li:nth-child(odd)::before {
-        right: -6%;
-    }
-
-    .timeline ul li:nth-child(even)::before {
-        left: -6%;
-    }
-
-    .timeline ul li:nth-child(odd)::after {
-        border-width: 10px 15px 10px 0px;
-        border-color: transparent #6658ea transparent transparent;
-        rotate: 180deg;
-    }
-
-    .timeline ul li:nth-child(even) {
-        float: right;
-    }
+    
 
     .itinerario-header p {
         font-size: 40px;
