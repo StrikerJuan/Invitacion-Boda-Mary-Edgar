@@ -59,4 +59,17 @@ document.addEventListener("DOMContentLoaded", function () {
     var hoy = new Date();
     var anio = hoy.getFullYear();
     document.getElementById("anio").innerText = anio;
+
+    const currentDateWa = new Date();
+    const disableDate = new Date('2025-09-11T23:59:59');
+
+    let urlWa;
+    if (currentDateWa < disableDate) {
+        urlWa = `https://wa.me/5576869262?text=Confirmo%20mi%20asistencia%20!!!%20`;
+    } else {
+        // Si la fecha actual es posterior a la fecha límite, desactivar el enlace
+        urlWa = "#"; // O simplemente no asignar un valor
+    }
+
+    document.getElementById("confirm-link").setAttribute('href', urlWa);
 });

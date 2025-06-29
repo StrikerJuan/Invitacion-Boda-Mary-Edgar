@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/freestyle-script');
+
 @font-face {
     font-family: 'Amoresa';
     src: url(/src/Amoresa.ttf);
@@ -26,6 +27,7 @@
     font-family: 'Italianno';
     src: url(/src/Italianno-Regular.ttf);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -56,10 +58,10 @@ section {
 }
 
 #crono {
-    background-image: url(../img/crono-1.jpg);
+    background-image: url(../img/crono.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     position: relative;
 }
 
@@ -82,7 +84,7 @@ section {
 }
 
 #hashtag {
-    background-image: url(../img/hashtag-1.jpg);
+    background-image: url(/img/hashtag.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -109,7 +111,7 @@ section {
 }
 
 #copyright {
-    background-color: #dcddfc;
+    background-color: #ffffff;
     height: 60%;
     display: flex;
     align-items: center;
@@ -205,8 +207,10 @@ section {
 /* PANEL DE AUDIO */
 .audio-container {
     width: 100px;
+    max-width: 100%;
     height: 10%;
-    margin: 20px auto;
+    margin: 0px auto;
+    z-index: 0;
 }
 
 audio {
@@ -393,7 +397,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #dacae8;
+    color: #b6d13d;
 }
 
 .crono-title {
@@ -419,7 +423,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid #dacae8;
+    border: 1px solid #4b512f;
     border-radius: 10px;
     padding: 10px;
     width: 80px;
@@ -485,7 +489,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 }
 
 .hashtag-container {
-    max-width: 90%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -531,7 +535,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 
 .hashtag-carrusel {
     overflow: hidden;
-    max-width: 75%;
+    max-width: 95%;
     height: 50%;
     display: flex;
     align-items: center;
@@ -542,8 +546,8 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     animation: loop 40s linear infinite;
     -webkit-animation: loop 40s linear infinite;
     width: calc(200px * 14);
-    background-color: #b47fc38f;
-    gap: 5%;
+    background-color: #4c5c0c8f;
+    gap: 7%;
 }
 
 .tag {
@@ -587,11 +591,10 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 }
 
 .hashtag-title p {
-    font-family: "Playfair Display", serif;
+    font-family: "Philosopher", regular;
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 80px;
-    font-style: italic;
     color: white;
     text-align: center;
 }
@@ -689,11 +692,10 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 }
 
 .agradecimiento-header p {
-    font-family: "Playfair Display", serif;
+    font-family: "Philosopher", cursive;
     font-weight: 400;
     font-size: 50px;
-    font-style: italic;
-    color: #ba9ae9;
+    color: #b6d13d;
     text-align: center;
 }
 
@@ -701,16 +703,16 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-size: 75px;
-    color: #ba9ae9;
+    color: #b6d13d;
     text-align: center;
 }
 
 .agradecimiento-name p {
-    font-family: 'Freestyle Script', sans-serif;
+    font-family: 'Amoresa', regular;
     font-weight: 400;
     font-style: normal;
     font-size: 140px;
-    color: #684d91;
+    color: #546304;
 }
 
 .copyright-contacto a {
@@ -854,6 +856,7 @@ form label {
 #invitacion {
     background-image: url(/img/fondo1.jpg);
     min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -861,25 +864,28 @@ form label {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 80px 20px 40px;
+    padding: 80px 20px;
     text-align: center;
 }
 
 .invitacion-container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 90%;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0 20px;
 }
 
 .nombre {
     font-family: 'Amoresa', cursive;
-    font-size: 84px;
+    font-size: 5.25rem;
     margin: 0;
 }
 
 .simbolo {
     font-family: 'Hello-Paris', regular;
-    font-size: 56px;
-    margin: 10px 0 20px; /* espacio arriba y abajo */
+    font-size: 3.5rem;
+    margin: 10px 0 20px;
+    /* espacio arriba y abajo */
 }
 
 .frase,
@@ -890,7 +896,7 @@ form label {
 }
 
 .frase {
-    font-size: 34px;
+    font-size: 2rem;
     margin-top: 30px;
     letter-spacing: 2px;
     color: #333;
@@ -905,7 +911,7 @@ form label {
 
 .fecha-lado {
     width: 30%;
-    font-size: 36px;
+    font-size: 2.25rem;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     padding: 5px 0;
@@ -913,12 +919,12 @@ form label {
 
 .fecha-dia {
     width: 30%;
-    font-size: 88px;
+    font-size: 5.5rem;
     font-weight: bold;
 }
 
 .fecha-mes {
-    font-size: 36px;
+    font-size: 2.25rem;
     margin-bottom: 20px;
 }
 
@@ -938,7 +944,8 @@ form label {
     align-items: center;
     padding: 80px 20px;
     background-color: white;
-    background-image: url('/img/fondo-1.jpg'); /* reemplaza con tu fondo */
+    background-image: url('/img/fondo-1.jpg');
+    /* reemplaza con tu fondo */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -955,7 +962,8 @@ form label {
     font-size: 62px;
     line-height: 1.8;
     margin-bottom: 40px;
-    font-family: 'Great-Vibes', cursive; /* o Italianno si prefieres */
+    font-family: 'Great-Vibes', cursive;
+    /* o Italianno si prefieres */
 }
 
 .dedicatoria-firma {
@@ -970,8 +978,10 @@ form label {
 #familia {
     min-height: 100vh;
     padding: 80px 40px;
-    background-image: url('/img/fondo1.jpg'); /* opcional si quieres fondo decorativo */
-    background-color: rgb(255, 255, 255); /* Color negro semitransparente */
+    background-image: url('/img/fondo1.jpg');
+    /* opcional si quieres fondo decorativo */
+    background-color: rgb(255, 255, 255);
+    /* Color negro semitransparente */
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1013,8 +1023,10 @@ form label {
 #detalles {
     min-height: 100vh;
     padding: 80px 40px;
-    background-image: url('/img/fondo-1.jpg'); /* opcional si quieres fondo decorativo */
-    background-color: rgb(255, 255, 255); /* Color negro semitransparente */
+    background-image: url('/img/fondo-1.jpg');
+    /* opcional si quieres fondo decorativo */
+    background-color: rgb(255, 255, 255);
+    /* Color negro semitransparente */
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1038,7 +1050,8 @@ form label {
 .regalos-header {
     display: flex;
     align-items: center;
-
+    width: 100%;
+    justify-content: center;
 }
 
 .detalles-header p,
@@ -1047,7 +1060,7 @@ form label {
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 50px;
-    color: #546304;
+    color: #4b512f;
     text-align: center;
 }
 
@@ -1083,7 +1096,7 @@ form label {
 }
 
 .detalles-title {
-    font-family: "Hello-Paris", regular;
+    font-family: "Philosopher", regular;
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 35px;
@@ -1118,8 +1131,8 @@ form label {
 }
 
 .detalles-button div {
-    padding: 5px;
-    width: 150px;
+    padding: 20px;
+    width: 200px;
     background-color: #546304;
     color: white;
     border-radius: 10px;
@@ -1130,6 +1143,8 @@ form label {
 
 .detalles-button div p {
     margin: 0;
+    font-size: 1.5rem;
+    font-family: "Philosopher", regular;
 }
 
 .detalles-button div:hover {
@@ -1152,14 +1167,17 @@ form label {
     align-items: center;
     justify-content: center;
 }
+
 /*--------------------------------------------------Pantalla 5-----------*/
 #itinerario {
     min-height: 100vh;
-    padding: 80px 40px;
-    background-image: url('/img/fondo5.jpg'); /* opcional si quieres fondo decorativo */
-    background-color: rgb(255, 255, 255); /* Color negro semitransparente */
+    /* padding: 80px 40px; */
+    background-image: url('/img/fondo-1.jpg');
+    /* opcional si quieres fondo decorativo */
+    background-color: rgb(255, 255, 255);
+    /* Color negro semitransparente */
     background-blend-mode: multiply;
-    background: linear-gradient(to bottom, rgba(255,255,255,0), #fff 30%), url('/img/fondo5.jpg');
+    /* background: linear-gradient(to bottom, rgba(255,255,255,0), #fff 30%), url('/img/fondo5.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1180,7 +1198,7 @@ form label {
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 50px;
-    color: #546304;
+    color: #4b512f;
     text-align: center;
 }
 
@@ -1353,6 +1371,7 @@ form label {
 
 .content i {
     font-size: 40px;
+    margin-bottom: 1rem;
 }
 
 
@@ -1373,6 +1392,198 @@ form label {
     font-size: 20px;
 }
 
+/*--------------------------------------------------Pantalla 6-----------*/
+
+#regalos {
+    min-height: 100vh;
+    background-image: url('/img/fondo1.jpg');
+    /* Usa el fondo decorativo que tú tienes */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regalos-container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px 20px;
+    border: 5px solid #90a46c;
+    border-radius: 30px;
+}
+
+.regalos-titulo {
+    font-family: 'Amoresa', cursive;
+    font-size: 5rem;
+    color: #4b512f;
+    margin-bottom: 60px;
+}
+
+.regalos-cajas {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-direction: row;
+}
+
+.regalo-box {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.regalo-logo {
+    max-width: 300px;
+    max-height: 70px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    filter: brightness(0) saturate(100%) invert(25%) sepia(27%) saturate(875%) hue-rotate(38deg) brightness(93%) contrast(87%);
+    /* Esto aplica un tono verde olivo */
+}
+
+.regalo-evento {
+    font-family: 'Philosopher', serif;
+    font-size: 20px;
+    color: #546304;
+    margin-bottom: 20px;
+}
+
+.regalo-boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7a8c4a;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.regalo-boton:hover {
+    background-color: #5a6633;
+}
+
+.detalles-button-mesa {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detalles-button-mesa div {
+    padding: 20px;
+    width: 200px;
+    background-color: #546304;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    /* Agrega una transición suave */
+}
+
+.detalles-button-mesa div p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: "Philosopher", regular;
+}
+
+.detalles-button-mesa div:hover {
+    cursor: pointer;
+    background-color: #3f4d02;
+    /* Cambia el color de fondo */
+    color: white;
+    /* Cambia el color del texto */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    /* Agrega una sombra */
+    font-size: 16px;
+    /* Cambia el tamaño del texto */
+    transform: scale(1.1);
+    /* Escala el botón al 110% */
+}
+
+.detalles-button-mesa a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Final */
+#dress-code {
+  
+  font-family: 'Philosopher', sans-serif;
+  min-height: 100vh;
+    background-image: url('/img/fondo1.jpg');
+    /* Usa el fondo decorativo que tú tienes */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+}
+
+#dress-code .titulo {
+  font-size: 50px;
+  margin-bottom: 40px;
+  
+  color: #4b512f;
+}
+
+.contenedor-dress {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.columna {
+  max-width: 400px;
+  width: 400px;
+}
+
+.columna img {
+  width: 200px;
+  filter: brightness(0) saturate(100%) invert(25%) sepia(27%) saturate(875%) hue-rotate(38deg) brightness(93%) contrast(87%);
+  margin-bottom: 20px;
+}
+
+.columna h3 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.columna p {
+  font-size: 1.75rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.nota {
+  font-size: 1.5rem;
+  color: #111;
+  font-style: italic;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 @media screen and (max-width: 991px) {
     .carrusel {
@@ -1437,7 +1648,7 @@ form label {
     .detalles-iconos,
     .regalos-iconos {
         flex-direction: column;
-        height: 530px;
+        height: 410px;
         align-items: center;
     }
 
@@ -1462,10 +1673,10 @@ form label {
     }
 
     .detalles-button {
-        padding-top: 0;
+        padding-top: 100px;
     }
 
-    
+
 
     .itinerario-header p {
         font-size: 40px;
@@ -1549,95 +1760,135 @@ form label {
     }
 
 
-/*-----------------------------------------------------------nuevo css-----------*/
-/*--------------------------------------------------Pantalla 1-----------*/
+    /*-----------------------------------------------------------nuevo css-----------*/
+    /*--------------------------------------------------Pantalla 1-----------*/
     #invitacion {
-    padding: 40px 10px;
-  }
+        padding: 40px 10px;
+    }
 
-  .nombre {
-    font-size: 52px;
-  }
+    .nombre {
+        font-size: 52px;
+    }
 
-  .simbolo {
-    font-size: 38px;
-    margin: 8px 0 16px;
-  }
+    .simbolo {
+        font-size: 38px;
+        margin: 8px 0 16px;
+    }
 
-  .frase {
-    font-size: 18px;
-    padding: 0 15px;
-    line-height: 1.4;
-  }
+    .frase {
+        font-size: 18px;
+        padding: 0 15px;
+        line-height: 1.4;
+    }
 
-  .fecha-bloque {
-    flex-direction: column;
-    gap: 12px;
-    margin: 30px 0;
-  }
+    .fecha-bloque {
+        flex-direction: column;
+        gap: 12px;
+        margin: 30px 0;
+    }
 
-  .fecha-lado {
-    width: 100%;
-    font-size: 25px;
-  }
+    .fecha-lado {
+        width: 100%;
+        font-size: 25px;
+    }
 
-  .fecha-dia {
-    font-size: 46px;
-  }
+    .fecha-dia {
+        font-size: 46px;
+    }
 
-  .fecha-mes,
-  .direccion {
-    font-size: 22px;
-    padding: 0 10px;
-  }
+    .fecha-mes,
+    .direccion {
+        font-size: 22px;
+        padding: 0 10px;
+    }
 
-  .audio-container {
-    margin-top: 30px;
-  }
-  /*--------------------------------------------------Pantalla 2-----------*/
+    .audio-container {
+        margin-top: 30px;
+    }
 
-  #dedicatoria {
-    padding: 40px 15px;
-  }
+    /*--------------------------------------------------Pantalla 2-----------*/
 
-  .dedicatoria-carta {
-    font-size: 30px;
-    line-height: 1.6;
-  }
+    #dedicatoria {
+        padding: 40px 15px;
+    }
 
-  .dedicatoria-firma {
-    padding-left: 3rem;
-    font-size: 40px;
-  }
+    .dedicatoria-carta {
+        font-size: 30px;
+        line-height: 1.6;
+    }
 
-/*--------------------------------------------------Pantalla 3-----------*/
-  #familia {
-    padding: 40px 20px;
-  }
+    .dedicatoria-firma {
+        padding-left: 3rem;
+        font-size: 40px;
+    }
 
-  #familia {
-    background-image: url('/img/fondo3.jpg');
-    background-size: cover;
-    background-position: center;
-    transform: rotate(0deg);
-  }
+    /*--------------------------------------------------Pantalla 3-----------*/
+    #familia {
+        padding: 40px 20px;
+    }
 
-  .familia-container {
+    .familia-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .bloque-familia {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .titulo-familia {
+        font-size: 28px;
+    }
+
+    .nombre-familia {
+        font-size: 16px;
+    }
+
+    /*--------------------------------------------------Pantalla 6-----------*/
+
+    .regalos-cajas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .regalos-titulo {
+        font-size: 2rem;
+        margin-bottom: 0px;
+    }
+
+    .detalles-button-mesa {
+        padding-top: 0px;
+    }
+
+    .regalo-box {
+        flex: 1 1 200px;
+    }
+
+    /*--------------------------------------------------Final-----------*/
+    .contenedor-dress {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
   }
 
-  .bloque-familia {
-    width: 100%;
-    max-width: 300px;
+  .columna {
+    max-width: 90%;
   }
 
-  .titulo-familia {
+  .columna img{
+    width: 100px;
+  }
+
+  .columna h3 {
     font-size: 28px;
   }
 
-  .nombre-familia {
+  .columna p{
+    font-size: 20px;
+  }
+
+  .nota{
     font-size: 16px;
   }
 }
